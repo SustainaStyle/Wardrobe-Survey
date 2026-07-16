@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Anonymous wardrobe and clothing habits survey" />
   <title>Wardrobe Habits Survey</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,32 +12,43 @@
 </head>
 <body>
   <div class="noise"></div>
+
   <main id="app">
+    
     <section id="closedView" class="view hidden">
       <div class="status-card">
         <div class="monogram">W</div>
         <p class="eyebrow">Wardrobe Habits Study</p>
         <h1 id="closedTitle">The survey is currently closed.</h1>
-        <p id="closedMessage" class="body-copy">Thank you for your interest. Please check again later.</p>
+        <p id="closedMessage" class="body-copy">
+          Thank you for your interest. Please check again later.
+        </p>
       </div>
     </section>
 
+    
     <section id="introView" class="view hidden">
       <div class="intro-layout">
         <div class="intro-copy">
           <p class="eyebrow">Wardrobe Habits Study</p>
           <h1>Too many clothes.<br><em>Still nothing to wear?</em></h1>
-          <p class="body-copy">A short study about outfit decisions, wardrobe habits, and clothing choices.</p>
+          <p class="body-copy">
+            A short study about outfit decisions, wardrobe habits, and clothing choices.
+          </p>
         </div>
+
         <div class="video-frame">
-          <video id="introVideo" muted playsinline webkit-playsinline preload="auto">
+          <video id="introVideo" muted playsinline preload="auto">
+            
             <source src="assets/intro-video.mp4" type="video/mp4" />
           </video>
+
           <div id="videoPlaceholder" class="video-placeholder">
             <div class="placeholder-mark">W</div>
             <p id="videoStatus">Preparing the survey…</p>
             <button id="continueWithoutVideo" class="placeholder-button hidden" type="button">Continue to survey</button>
           </div>
+
           <div class="video-overlay">
             <div class="video-progress"><span id="videoProgress"></span></div>
             <button id="skipIntro" class="text-button" type="button">Skip intro</button>
@@ -46,6 +57,7 @@
       </div>
     </section>
 
+    
     <section id="surveyView" class="view hidden">
       <form id="surveyForm" class="survey-shell" novalidate>
         <header class="survey-header">
@@ -55,44 +67,51 @@
           </div>
           <div class="progress-area">
             <div class="progress-meta">
-              <span id="progressCount">1 / 12</span>
-              <span id="progressPercent">8%</span>
+              <span id="progressCount">1 of 16</span>
+              <span id="progressPercent">6%</span>
             </div>
             <div class="progress-track"><span id="surveyProgress"></span></div>
           </div>
         </header>
+
         <div id="stepContainer" class="step-container"></div>
+
         <footer class="survey-footer">
           <button id="backButton" class="button button-secondary" type="button">Back</button>
-          <p id="anonymousNote" class="anonymous-note">Your response remains anonymous.</p>
+          <p class="anonymous-note">Your response remains anonymous.</p>
           <button id="nextButton" class="button button-primary" type="button">Continue</button>
         </footer>
       </form>
     </section>
 
+    
     <section id="thankYouView" class="view hidden">
       <div class="thankyou-card">
         <div class="success-mark">✓</div>
-        <p id="thankEyebrow" class="eyebrow">Response submitted</p>
-        <h1 id="thankTitle">Thank you for sharing your experience.</h1>
-        <p id="thankMessage" class="body-copy">Your response has been recorded anonymously.</p>
+        <p class="eyebrow">Response submitted</p>
+        <h1>Thank you for sharing your experience.</h1>
+        <p class="body-copy">
+          Your response has been recorded anonymously.
+        </p>
         <div class="coming-soon">
-          <span id="comingSoonLabel">Coming soon</span>
-          <strong id="comingSoonText">A thoughtful experience, right at your fingertips.</strong>
+          <span>Coming soon</span>
+          <strong>A thoughtful experience, right at your fingertips.</strong>
         </div>
       </div>
     </section>
 
+    
     <section id="errorView" class="view hidden">
       <div class="status-card">
         <div class="monogram">!</div>
-        <p id="errorEyebrow" class="eyebrow">Submission interrupted</p>
-        <h1 id="errorTitle">We could not save your response.</h1>
-        <p id="errorMessage" class="body-copy">Please check your connection and try again.</p>
+        <p class="eyebrow">Submission interrupted</p>
+        <h1>We could not save your response.</h1>
+        <p class="body-copy">Please check your connection and try again.</p>
         <button id="retryButton" class="button button-primary" type="button">Try again</button>
       </div>
     </section>
   </main>
+
   <script src="config.js"></script>
   <script src="app.js"></script>
 </body>
