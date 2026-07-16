@@ -560,6 +560,10 @@ select:focus {
   }
 }
 
+html[lang="hi"] .message-modal-text {
+  font-family: "Noto Sans Devanagari", "DM Sans", sans-serif;
+}
+
 @media (max-width: 620px) {
   .message-modal {
     padding: 16px;
