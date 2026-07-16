@@ -623,3 +623,17 @@ html[lang="hi"] .coming-soon strong {
     margin-bottom: 16px;
   }
 }
+
+html[lang="hi"] .eyebrow,
+html[lang="hi"] .step-label,
+html[lang="hi"] .field label,
+html[lang="hi"] .coming-soon span {
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 600;
+}
+
+html[lang="hi"] .eyebrow,
+html[lang="hi"] .step-label {
+  word-spacing: 0;
+}
