@@ -7,7 +7,7 @@
   <title>Wardrobe Habits Survey</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -38,15 +38,15 @@
         </div>
 
         <div class="video-frame">
-          <video id="introVideo" muted playsinline preload="auto">
+          <video id="introVideo" muted playsinline preload="metadata">
             
             <source src="assets/intro-video.mp4" type="video/mp4" />
           </video>
 
           <div id="videoPlaceholder" class="video-placeholder">
-            <div class="placeholder-mark">W</div>
-            <p id="videoStatus">Preparing the survey…</p>
-            <button id="continueWithoutVideo" class="placeholder-button hidden" type="button">Continue to survey</button>
+            <div class="placeholder-mark">10s</div>
+            <p>Place your video at</p>
+            <code>assets/intro-video.mp4</code>
           </div>
 
           <div class="video-overlay">
@@ -111,6 +111,16 @@
       </div>
     </section>
   </main>
+
+
+  <div id="messageModal" class="message-modal hidden" role="dialog" aria-modal="true" aria-labelledby="messageText">
+    <div class="message-modal-backdrop"></div>
+    <div class="message-modal-card">
+      <div class="message-modal-mark">!</div>
+      <p id="messageText" class="message-modal-text"></p>
+      <button id="messageModalButton" class="button button-primary" type="button">OK</button>
+    </div>
+  </div>
 
   <script src="config.js"></script>
   <script src="app.js"></script>
