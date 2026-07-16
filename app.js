@@ -222,11 +222,10 @@ function renderAboutStep(step) {
         </div>
 
         <div class="field">
-          <label for="identity">How do you identify?</label>
+          <label for="identity">What is your gender identity?</label>
           <select id="identity">
             ${buildSelectOptions([
-              "Female", "Male", "Non-binary",
-              "Prefer to self-describe", "Prefer not to say"
+              "Female", "Male", "Other"
             ], state.answers.identity)}
           </select>
         </div>
