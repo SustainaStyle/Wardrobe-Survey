@@ -7,28 +7,20 @@ const QUESTIONS = [
     description: "These details help us understand how wardrobe habits vary across different groups."
   },
   {
-    title: "How often do you struggle to decide what to wear?",
-    options: ["Never", "Rarely", "Sometimes", "Often", "Almost every day"]
+    title: "I have nothing to Wear, How often you feel?",
+    options: ["Rarely", "Sometimes", "Often", "Almost every day"]
   },
   {
-    title: "How much time do you usually spend deciding what to wear on a typical day?",
-    options: ["Less than 5 minutes", "5–10 minutes", "10–20 minutes", "More than 20 minutes"]
+    title: "I want to improve my style when I go out?",
+    options: ["Rarely", "Sometimes", "Often", "Almost every day"]
   },
   {
-    title: "How often do you feel that you need someone’s help or opinion while choosing an outfit from your existing wardrobe?",
-    options: ["Never", "Rarely", "Sometimes", "Often", "Very often"]
-  },
-  {
-    title: "How important is it for you to improve or refine your personal style?",
-    options: ["Not important", "Slightly important", "Moderately important", "Very important", "Extremely important"]
+    title: "Do you ever feel your wardrobe is missing something but can't figure out what?",
+    options: ["Rarely", "Sometimes", "Often", "Almost every day"]
   },
   {
     title: "How often do you plan outfits in advance for specific occasions or events?",
-    options: ["Never", "Rarely", "Sometimes", "Often", "Always"]
-  },
-  {
-    title: "How organised do you feel your wardrobe currently is?",
-    options: ["Very organised", "Fairly organised", "Somewhat disorganised", "Very disorganised", "I am not sure what I own"]
+    options: ["Never",  "Sometimes", "Often", "Always"]
   },
   {
     title: "Do you have clothes in your wardrobe that you have never worn or rarely wear?",
@@ -36,27 +28,19 @@ const QUESTIONS = [
   },
   {
     title: "How many clothes in your wardrobe do you feel no longer suit your style?",
-    options: ["Many", "Some", "Very few", "None", "Not sure"]
-  },
-  {
-    title: "How often do you feel that you have many clothes but still cannot find a suitable outfit to wear?",
-    options: ["Never", "Rarely", "Sometimes", "Often", "Very often"]
-  },
-  {
-    title: "Have you ever bought something and later realised that you already owned something similar?",
-    options: ["Many times", "A few times", "Once or twice", "Never"]
+    options: ["Many", "Some", "Very few", "None"]
   },
   {
     title: "Do you ever feel that something is missing from your wardrobe but cannot figure out exactly what it is?",
-    options: ["Never", "Rarely", "Sometimes", "Often", "Very often"]
+    options: ["Rarely", "Sometimes", "Often", "Very often"]
   },
   {
-    title: "How interested are you in organising and decluttering your wardrobe so that you can create more wearable outfits with fewer clothes?",
+    title: "I want to maximize outfit options while minimizing the number of clothes in my wardrobe",
     options: ["Not interested", "Slightly interested", "Interested", "Very interested"]
   },
   {
-    title: "How often do you feel unsure about what clothing item you should buy next?",
-    options: ["Never", "Rarely", "Sometimes", "Often", "Very often"]
+    title: "Do you need help deciding what to buy next?",
+    options: ["Rarely", "Sometimes", "Often", "Very often"]
   },
   {
     title: "How often do you shop for clothes?",
@@ -65,7 +49,7 @@ const QUESTIONS = [
   {
     title: "Where do you usually shop for clothes?",
     type: "checkbox",
-    options: ["Myntra", "AJIO", "Nykaa Fashion", "Lifestyle", "Shoppers Stop", "Pantaloons", "Tata CLiQ", "Local stores", "Other"]
+    options: [ "Local stores (Off-line)", "Myntra", "AJIO", "Nykaa Fashion", "Tata CLiQ", "Other"]
   }
 ];
 
