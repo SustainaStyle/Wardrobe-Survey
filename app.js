@@ -23,6 +23,9 @@ const els = {
   continueWithoutVideo: document.getElementById("continueWithoutVideo"),
   videoProgress: document.getElementById("videoProgress"),
   skipIntro: document.getElementById("skipIntro"),
+  soundToggle: document.getElementById("soundToggle"),
+  soundIcon: document.getElementById("soundIcon"),
+  soundLabel: document.getElementById("soundLabel"),
   stepContainer: document.getElementById("stepContainer"),
   stepLabel: document.getElementById("stepLabel"),
   progressCount: document.getElementById("progressCount"),
@@ -112,6 +115,21 @@ function startIntro() {
   }
 
   els.skipIntro.addEventListener("click", goToSurvey, { once:true });
+
+  els.soundToggle.addEventListener("click", () => {
+    els.introVideo.muted = !els.introVideo.muted;
+
+    if (els.introVideo.muted) {
+      els.soundIcon.textContent = "🔇";
+      els.soundLabel.textContent = "Unmute";
+      els.soundToggle.setAttribute("aria-label", "Turn sound on");
+    } else {
+      els.soundIcon.textContent = "🔊";
+      els.soundLabel.textContent = "Mute";
+      els.soundToggle.setAttribute("aria-label", "Turn sound off");
+      els.introVideo.play().catch(() => {});
+    }
+  });
   els.continueWithoutVideo.addEventListener("click", goToSurvey, { once:true });
   els.introVideo.addEventListener("ended", goToSurvey, { once:true });
 
