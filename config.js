@@ -5,7 +5,7 @@ window.SURVEY_CONFIG = {
 
   closingDate: "",
 
-  apiUrl: "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE",
+  apiUrl: "https://script.google.com/macros/s/AKfycbxGNmqI7gHakopTNeNcc_0DKKVXC8MExX-Zpp3Th_ltl6DJZSkaW27Aqt_qS3FflEkgSg/exec",
 
   introDurationSeconds: 10,
 
